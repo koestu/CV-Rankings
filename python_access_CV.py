@@ -2,7 +2,7 @@
 import csv, pyodbc
 
 # MDB is the path to your database, change it based on where the file is located
-MDB = 'c:/users/john/desktop/school3/mis323-hw4-dbpy.mdb'; DRV = '{Microsoft Access Driver (*.mdb)}'; PWD = 'pw'
+MDB = ''; DRV = '{Microsoft Access Driver (*.mdb)}'; PWD = 'pw'
 con = pyodbc.connect('DRIVER={};DBQ={};PWD={}'.format(DRV,MDB,PWD))
 cur = con.cursor()
 
